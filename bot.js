@@ -66,7 +66,7 @@ controller.ready( async () => {
   const path = require('path');
 
   // load developer-created custom feature modules
-  controller.loadModules( path.join( __dirname, 'borrowed-features' ) );
+  controller.loadModules( path.join( __dirname, 'features' ) );
 
   if ( process.env.WEBSOCKET_EVENTS == 'True' ) {
     console.log("Using web socket mode");
